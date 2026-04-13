@@ -5,6 +5,85 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Abernethy Elementary School Carnival — May 15, 2026</title>
   <meta name="description" content="Games! Food! Prizes! Fun for the whole family at the Abernethy Elementary School Carnival on Friday, May 15, 2026. Get your wristbands in advance!">
+  <link rel="canonical" href="http://carnival.supportabernethy.org/">
+  <meta name="theme-color" content="#8b1a1a">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="apple-touch-icon" href="favicon.svg">
+
+  <!-- Open Graph / Facebook / iMessage / Slack link previews -->
+  <meta property="og:type" content="event">
+  <meta property="og:site_name" content="Abernethy Elementary PTA">
+  <meta property="og:title" content="Abernethy School Carnival — May 15, 2026">
+  <meta property="og:description" content="Games, food, prizes, and live music! Friday May 15, 5:30–8:00 PM at Abernethy Elementary. Wristbands $25 in advance.">
+  <meta property="og:url" content="http://carnival.supportabernethy.org/">
+  <meta property="og:image" content="http://carnival.supportabernethy.org/hero-poster.jpg">
+  <meta property="og:image:alt" content="Vintage circus poster for the Abernethy School Carnival">
+
+  <!-- Twitter card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Abernethy School Carnival — May 15, 2026">
+  <meta name="twitter:description" content="Games, food, prizes, and live music! Friday May 15, 5:30–8:00 PM at Abernethy Elementary. Wristbands $25 in advance.">
+  <meta name="twitter:image" content="http://carnival.supportabernethy.org/hero-poster.jpg">
+
+  <!-- Structured data for Google rich result -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": "Abernethy Elementary School Carnival",
+    "description": "Annual school carnival with games, food, prizes, and live music. Fun for the whole family!",
+    "startDate": "2026-05-15T17:30:00-07:00",
+    "endDate": "2026-05-15T20:00:00-07:00",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "location": {
+      "@type": "Place",
+      "name": "Abernethy Elementary School",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "2421 SE Orange Ave",
+        "addressLocality": "Portland",
+        "addressRegion": "OR",
+        "postalCode": "97214",
+        "addressCountry": "US"
+      }
+    },
+    "image": "http://carnival.supportabernethy.org/hero-poster.jpg",
+    "organizer": {
+      "@type": "Organization",
+      "name": "Abernethy Elementary PTA",
+      "url": "http://carnival.supportabernethy.org/"
+    },
+    "offers": [
+      {
+        "@type": "Offer",
+        "name": "Wristband (advance)",
+        "price": "25",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "url": "https://www.konstella.com/open/sales/69adb9845b1aa98cd7a03ade",
+        "validFrom": "2026-04-01T00:00:00-07:00"
+      },
+      {
+        "@type": "Offer",
+        "name": "Wristband (at event)",
+        "price": "30",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "url": "http://carnival.supportabernethy.org/",
+        "validFrom": "2026-05-15T17:30:00-07:00"
+      },
+      {
+        "@type": "Offer",
+        "name": "Pre-elementary wristband",
+        "price": "10",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "url": "https://www.konstella.com/open/sales/69adb9845b1aa98cd7a03ade"
+      }
+    ]
+  }
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Passion+One:wght@400;700;900&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
@@ -72,6 +151,43 @@
     }
     .frame-inner-inner::before { top: 6px; left: 10px; }
     .frame-inner-inner::after { bottom: 6px; right: 10px; transform: rotate(180deg); }
+
+    /* ---- Poster email hotspots ---- */
+    .poster-wrap { position: relative; display: block; }
+    .email-hotspot {
+      position: absolute;
+      display: block;
+      background: transparent;
+      border-radius: 4px;
+      transition: background 0.15s ease;
+    }
+    .email-hotspot:hover,
+    .email-hotspot:focus {
+      background: rgba(139, 26, 26, 0.12);
+      outline: 1px dashed #8b1a1a;
+    }
+    .email-hotspot-volunteer { left: 55%; top: 72%; width: 41%; height: 9%; }
+    .email-hotspot-cake      { left: 55%; top: 72%; width: 41%; height: 9%; }
+
+    /* ---- Key facts strip ---- */
+    .key-facts {
+      max-width: 760px;
+      margin: -8px auto 24px;
+      padding: 16px 20px 0;
+      text-align: center;
+      font-family: 'Lora', Georgia, serif;
+      color: #3d2a18;
+    }
+    .key-facts h1 {
+      font-family: 'Abril Fatface', serif;
+      font-weight: 400;
+      font-size: 1.6rem;
+      color: #8b1a1a;
+      margin-bottom: 8px;
+      line-height: 1.2;
+    }
+    .key-facts p { font-size: 0.95rem; line-height: 1.6; margin: 2px 0; }
+    .key-facts a { color: #1e3a5f; font-weight: 600; }
 
     /* ---- Typography ---- */
     h2 {
@@ -307,6 +423,17 @@
     }
 
     /* ---- FAQ ---- */
+    .faq-section {
+      max-width: 760px;
+      margin: 32px auto;
+      padding: 0 20px;
+    }
+    .faq-header-img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: 0 auto 24px;
+    }
     .faq-item { border-bottom: 1px solid #e8e0d4; }
     .faq-item:last-child { border-bottom: none; }
     .faq-q {
@@ -316,7 +443,7 @@
       text-align: left;
       padding: 14px 30px 14px 0;
       font-family: 'Passion One', sans-serif;
-      font-size: 1rem;
+      font-size: 1.1rem;
       font-weight: 700;
       color: #2d2016;
       cursor: pointer;
@@ -344,6 +471,17 @@
       color: #555;
     }
     .faq-a-inner a { color: #1e3a5f; font-weight: 600; }
+    .faq-closing {
+      margin-top: 32px;
+      padding-top: 20px;
+      border-top: 1px solid #e8e0d4;
+      text-align: center;
+      font-size: 0.95rem;
+      line-height: 1.7;
+      color: #3d2a18;
+      font-style: italic;
+    }
+    .faq-closing a { color: #1e3a5f; font-weight: 600; font-style: normal; }
 
     /* ---- Footer ---- */
     .footer-frame {
@@ -415,7 +553,7 @@
       <li><a href="#activities">Activities</a></li>
       <li><a href="#wristbands">Pricing</a></li>
       <li><a href="#volunteer">Volunteer</a></li>
-      <li><a href="#cake">Cake-a-Palooza</a></li>
+      <li><a href="#cake">Cake</a></li>
       <li><a href="#faq">FAQ</a></li>
     </ul>
   </nav>
@@ -423,6 +561,15 @@
   <!-- Hero -->
   <div class="frame">
     <img src="hero-poster.jpg" alt="The Abernethy School Carnival — Friday, May 15, 5:30–8:00 PM — Fun for the Whole Family! Games, Food, Rides" style="width:100%; height:auto; display:block;">
+  </div>
+
+  <!-- Key facts (visible text for search engines, screen readers, and image-off browsers) -->
+  <div class="key-facts">
+    <h1>Abernethy Elementary School Carnival</h1>
+    <p><strong>Friday, May 15, 2026</strong> &middot; 5:30&ndash;8:00 PM</p>
+    <p>Abernethy Elementary &middot; 2421 SE Orange Ave, Portland, OR 97214</p>
+    <p>Wristbands: $25 in advance &middot; $30 at the event &middot; $10 pre-elementary</p>
+    <p><a href="https://www.konstella.com/open/sales/69adb9845b1aa98cd7a03ade">Buy wristbands on Konstella</a> &middot; Questions: <a href="mailto:carnival@supportabernethy.org">carnival@supportabernethy.org</a></p>
   </div>
 
   <!-- CTA — Wristband Info -->
@@ -447,68 +594,82 @@
 
   <!-- Volunteer -->
   <div class="frame" id="volunteer">
-    <a href="https://www.konstella.com/open/sales/69adb9845b1aa98cd7a03ade">
-      <img src="volunteer-poster.jpg" alt="Abernethy School Volunteer — Why We Need You: Carnival is a true community event and relies on parents and community participation. Help set up, run a game, bag cotton candy, or sell wristbands! Sign Up Process: Login to your Konstella account, find the Carnival volunteer signup, select your shift and role. Questions? carnivalhelp@supportabernethy.org. Sign Up on Konstella." style="width:100%; height:auto; display:block;">
-    </a>
+    <div class="poster-wrap">
+      <a href="https://www.konstella.com/open/sales/69adb9845b1aa98cd7a03ade">
+        <img src="volunteer-poster.jpg" alt="Abernethy School Volunteer — Why We Need You: Carnival is a true community event and relies on parents and community participation. Help set up, run a game, bag cotton candy, or sell wristbands! Sign Up Process: Login to your Konstella account, find the Carnival volunteer signup, select your shift and role. Questions? carnivalhelp@supportabernethy.org. Sign Up on Konstella." style="width:100%; height:auto; display:block;">
+      </a>
+      <a class="email-hotspot email-hotspot-volunteer" href="mailto:carnivalhelp@supportabernethy.org" aria-label="Email carnivalhelp@supportabernethy.org"></a>
+    </div>
   </div>
 
   <!-- Cake-a-Palooza -->
   <div class="frame" id="cake">
-    <img src="cake-poster.jpg" alt="Abernethy School Cake-a-Palooza — Donate a store-bought cake or baked good for the very popular Musical Cake-a-Palooza! Donations will be collected in the auditorium the day of the event. Questions? cake@supportabernethy.org. Donate Today!" style="width:100%; height:auto; display:block;">
+    <div class="poster-wrap">
+      <img src="cake-poster.jpg" alt="Abernethy School Cake-a-Palooza — Donate a store-bought cake or baked good for the very popular Musical Cake-a-Palooza! Donations will be collected in the auditorium the day of the event. Questions? cake@supportabernethy.org. Donate Today!" style="width:100%; height:auto; display:block;">
+      <a class="email-hotspot email-hotspot-cake" href="mailto:cake@supportabernethy.org" aria-label="Email cake@supportabernethy.org"></a>
+    </div>
   </div>
 
   <!-- FAQ -->
-  <div class="frame" id="faq">
-    <div class="frame-inner">
-      <div class="frame-inner-inner">
-        <h2>Questions &amp; Answers</h2>
-        <div class="stars">&#9733; &#9733; &#9733;</div>
+  <div class="faq-section" id="faq">
+        <img src="faq-header.jpg" alt="Questions &amp; Answers" class="faq-header-img">
+        <noscript>
+          <p style="text-align:center; font-style:italic; color:#8b1a1a; margin-bottom:16px;">Tap each question to see the answer (requires JavaScript). If it's not working, email <a href="mailto:carnival@supportabernethy.org" style="color:#8b1a1a;">carnival@supportabernethy.org</a> and we'll get you the info you need.</p>
+        </noscript>
         <div class="faq-item">
-          <button class="faq-q" aria-expanded="false" aria-controls="faq-1">Do adults need a wristband?</button>
-          <div class="faq-a" id="faq-1"><div class="faq-a-inner">No. Adults do not need to purchase a wristband. We need you to supervise the games as a volunteer!</div></div>
+          <button class="faq-q" aria-expanded="false" aria-controls="faq-1">What is Carnival?</button>
+          <div class="faq-a" id="faq-1"><div class="faq-a-inner">Carnival is a beloved school tradition and HUGE celebration for Abernethy students and the wider community. It officially kicks off with the sound of the bell at 5:30 PM for all families and ends with the sound of the bell at 8:00 PM. Families can enjoy traditional carnival games and prizes, inflatable obstacle courses, musical cakes, face-painting, balloon animals, and a photo booth. Food trucks offer a selection of food and treats &mdash; grab your dinner, have a seat at the nearby tables, or bring picnic blankets and chairs for lounging in the grassy area. A flat fee is charged for kids' admission, which buys each participant a wristband and allows kids to move freely between games and activities all night long. Wristbands do not cover fairy hair but do cover the rest of the games and activities.</div></div>
         </div>
         <div class="faq-item">
-          <button class="faq-q" aria-expanded="false" aria-controls="faq-2">How do I buy a wristband?</button>
-          <div class="faq-a" id="faq-2"><div class="faq-a-inner">Wristbands can be purchased online through <a href="https://www.konstella.com/open/sales/69adb9845b1aa98cd7a03ade">Konstella</a> or at the school gazebo before &amp; after school May 11&ndash;15, where cash and check are accepted.</div></div>
+          <button class="faq-q" aria-expanded="false" aria-controls="faq-2">What is the pregame from 5&ndash;5:30 PM?</button>
+          <div class="faq-a" id="faq-2"><div class="faq-a-inner">This year is our 3rd annual Carnival pregame! The pregame is for kiddos in 2nd grade and younger only. The games and a few inflatables will be open, as well as Cake-a-Palooza in the auditorium. This gives the younger kids the opportunity to check out the Carnival without the craziest of the older, more seasoned kiddos.</div></div>
         </div>
         <div class="faq-item">
-          <button class="faq-q" aria-expanded="false" aria-controls="faq-3">When do I get my wristband?</button>
-          <div class="faq-a" id="faq-3"><div class="faq-a-inner">Wristbands can be picked up at the gazebo before &amp; after school May 11&ndash;15 or during the carnival.</div></div>
+          <button class="faq-q" aria-expanded="false" aria-controls="faq-3">Do adults need a wristband?</button>
+          <div class="faq-a" id="faq-3"><div class="faq-a-inner">Adults do NOT need to purchase a wristband. We need you to supervise the games as a volunteer! <a href="https://www.konstella.com/open/sales/69adb9845b1aa98cd7a03ade">Volunteer using this link</a>, or scan the volunteer QR code on the posters around school or flyers being sent home.</div></div>
         </div>
         <div class="faq-item">
-          <button class="faq-q" aria-expanded="false" aria-controls="faq-4">Does the wristband cover food?</button>
-          <div class="faq-a" id="faq-4"><div class="faq-a-inner">In addition to unlimited games and activities, each wristband includes one cotton candy, one popcorn, and one donut. Wristbands do not cover food purchased from third-party vendors (pizza, shaved ice, etc.) or Fairy Sparkle hair services.</div></div>
+          <button class="faq-q" aria-expanded="false" aria-controls="faq-4">How do I buy and pick up a wristband?</button>
+          <div class="faq-a" id="faq-4"><div class="faq-a-inner">Wristbands can be purchased online using a credit card <a href="https://www.konstella.com/open/sales/69adb9845b1aa98cd7a03ade">using this link</a> or by scanning the QR on the poster. They can also be purchased at the school gazebo using <strong>CASH ONLY</strong> before and after school May 12&ndash;15. Wristbands purchased online can be picked up from the gazebo during the before/after school times as well.<br><br><strong>Before school (May 12&ndash;15):</strong> 7:45&ndash;8:15 AM<br><strong>After school (May 12&ndash;14):</strong> 2:20&ndash;2:50 PM<br><strong>Day of event (May 15):</strong> wristbands for sale and pickup at the gazebo 2:30&ndash;7:00 PM.</div></div>
         </div>
         <div class="faq-item">
           <button class="faq-q" aria-expanded="false" aria-controls="faq-5">What if I need financial assistance?</button>
-          <div class="faq-a" id="faq-5"><div class="faq-a-inner">We want every child to enjoy Carnival regardless of ability to pay! Please contact counselor Jenny Morgan at <a href="mailto:jmorgan1@pps.net">jmorgan1@pps.net</a> if you or someone you know needs assistance.</div></div>
+          <div class="faq-a" id="faq-5"><div class="faq-a-inner">We want EVERY child to enjoy Carnival regardless of ability to pay! Please contact counselor Jenny Morgan at <a href="mailto:jmorgan1@pps.net">jmorgan1@pps.net</a> if you or someone you know is in need of financial assistance.</div></div>
         </div>
         <div class="faq-item">
-          <button class="faq-q" aria-expanded="false" aria-controls="faq-6">Where do Carnival proceeds go?</button>
-          <div class="faq-a" id="faq-6"><div class="faq-a-inner">Carnival's primary function is to bring our community together to celebrate. It is not a traditional fundraiser. The carnival committee prices wristbands to cover expenses. Any proceeds go directly to the PTA general fund to enhance school programs.</div></div>
+          <button class="faq-q" aria-expanded="false" aria-controls="faq-6">When do I get my wristband?</button>
+          <div class="faq-a" id="faq-6"><div class="faq-a-inner">Wristbands can be picked up at the gazebo before and after school May 12&ndash;15 or during the Carnival. See "How do I buy and pick up a wristband?" above for full pickup times.</div></div>
         </div>
         <div class="faq-item">
-          <button class="faq-q" aria-expanded="false" aria-controls="faq-7">How can I volunteer?</button>
-          <div class="faq-a" id="faq-7"><div class="faq-a-inner">Sign up on <a href="https://www.konstella.com/open/sales/69adb9845b1aa98cd7a03ade">Konstella</a> to help set up, run a carnival game, bag cotton candy, or sell wristbands. Questions? Email <a href="mailto:carnivalhelp@supportabernethy.org">carnivalhelp@supportabernethy.org</a>.</div></div>
+          <button class="faq-q" aria-expanded="false" aria-controls="faq-7">Does the Carnival wristband cover food?</button>
+          <div class="faq-a" id="faq-7"><div class="faq-a-inner">In addition to unlimited games and activities, admission wristbands allow each child one cotton candy, one popcorn, and one donut. Wristbands do NOT cover food purchased from third-party vendors, such as pizza or burgers. Wristbands also do not cover Fairy Sparkle hair services.</div></div>
         </div>
         <div class="faq-item">
-          <button class="faq-q" aria-expanded="false" aria-controls="faq-8">How can I donate to Cake-a-Palooza?</button>
-          <div class="faq-a" id="faq-8"><div class="faq-a-inner">Drop off a store-bought cake or baked good in the auditorium the day of the event. Questions? Email <a href="mailto:cake@supportabernethy.org">cake@supportabernethy.org</a>.</div></div>
+          <button class="faq-q" aria-expanded="false" aria-controls="faq-8">What food will be available?</button>
+          <div class="faq-a" id="faq-8"><div class="faq-a-inner"><strong>Two Guys and a Grill</strong> food truck &mdash; Philly cheesesteaks, grilled veggie sandwich, grilled cheese sandwich, breakfast sandwich, hot dogs, sausages<br><strong>Hot Lips Pizza</strong> &mdash; vegan option available<br><strong>Book with Pictures</strong> food truck (across Orange Street) &mdash; sandwiches</div></div>
         </div>
         <div class="faq-item">
-          <button class="faq-q" aria-expanded="false" aria-controls="faq-9">Where is the carnival?</button>
-          <div class="faq-a" id="faq-9"><div class="faq-a-inner">Abernethy Elementary School &mdash; 2421 SE Orange Ave, Portland, OR 97214. On the school grounds.</div></div>
+          <button class="faq-q" aria-expanded="false" aria-controls="faq-9">Where do Carnival proceeds go?</button>
+          <div class="faq-a" id="faq-9"><div class="faq-a-inner">Carnival's primary function is to bring our community together to celebrate. It is not a traditional fundraiser. The carnival committee does its best to price wristbands appropriately to cover expenses of the event itself. Any additional proceeds go directly to the PTA general fund, where they are used to enhance school programs.</div></div>
         </div>
         <div class="faq-item">
-          <button class="faq-q" aria-expanded="false" aria-controls="faq-10">What if it rains?</button>
-          <div class="faq-a" id="faq-10"><div class="faq-a-inner">Rain or shine &mdash; this is Portland! Many activities will have cover.</div></div>
+          <button class="faq-q" aria-expanded="false" aria-controls="faq-10">How can I help make Carnival a success?</button>
+          <div class="faq-a" id="faq-10"><div class="faq-a-inner">Carnival is a true community event and relies heavily on parents and community participation. Consider volunteering to help set up, run a carnival game, bag up cotton candy, or sell wristbands. Sign up by scanning the QR code on the carnival flier or <a href="https://www.konstella.com/open/sales/69adb9845b1aa98cd7a03ade">clicking this link</a>.<br><br>If you aren't able to volunteer, consider dropping off a store-bought cake or baked good for the VERY POPULAR Musical Cake-a-Palooza. Donations will be collected in the auditorium the day of the event. Questions about Cake-a-Palooza? <a href="mailto:cake@supportabernethy.org">cake@supportabernethy.org</a></div></div>
         </div>
         <div class="faq-item">
-          <button class="faq-q" aria-expanded="false" aria-controls="faq-11">Where do I park?</button>
-          <div class="faq-a" id="faq-11"><div class="faq-a-inner">Street parking around the school. Walk, bike, or carpool encouraged.</div></div>
+          <button class="faq-q" aria-expanded="false" aria-controls="faq-11">Where is the carnival?</button>
+          <div class="faq-a" id="faq-11"><div class="faq-a-inner">Abernethy Elementary School &mdash; 2421 SE Orange Ave, Portland, OR 97214. On the school grounds.</div></div>
         </div>
-      </div>
-    </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false" aria-controls="faq-12">What if it rains?</button>
+          <div class="faq-a" id="faq-12"><div class="faq-a-inner">Rain or shine &mdash; this is Portland! Many activities will have cover.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false" aria-controls="faq-13">Where do I park?</button>
+          <div class="faq-a" id="faq-13"><div class="faq-a-inner">Street parking around the school. Walk, bike, or carpool encouraged.</div></div>
+        </div>
+
+        <p class="faq-closing">For any other general questions, please contact your fabulous Carnival Committee members &mdash; Liz Dome, Mandy Brigham, Stacey Milton, Beth Mikkleson, Destinee Alexander, Nick Dome, and Mercedes Callahan &mdash; at <a href="mailto:carnival@supportabernethy.org">carnival@supportabernethy.org</a>.<br><br>We are excited to celebrate our community with your families on May 15th!</p>
   </div>
 
   <!-- Footer -->
