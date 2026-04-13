@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abernethy Elementary School Carnival — May 15, 2026</title>
+  <meta name="description" content="Games! Food! Prizes! Fun for the whole family at the Abernethy Elementary School Carnival on Friday, May 15, 2026. Get your wristbands in advance!">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Passion+One:wght@400;700;900&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Lora', Georgia, serif;
+      background: #faf7f2;
+      color: #2d2016;
+      line-height: 1.7;
+    }
+
+    /* ---- Nav ---- */
+    nav {
+      background: #8b1a1a;
+      padding: 12px 20px;
+      display: flex;
+      justify-content: center;
+      border-bottom: 3px solid #c4993a;
+    }
+    nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px 24px;
+      justify-content: center;
+      list-style: none;
+    }
+    nav a {
+      font-family: 'Passion One', sans-serif;
+      font-weight: 700;
+      font-size: 0.9rem;
+      color: #faf7f2;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      transition: color 0.2s;
+    }
+    nav a:hover { color: #c4993a; }
+
+    /* ---- Ornate Frame — shared by all sections ---- */
+    .frame {
+      max-width: 760px;
+      margin: 32px auto;
+      padding: 0 20px;
+    }
+    .frame-inner {
+      border: 3px solid #8b1a1a;
+      padding: 4px;
+      background: #fff;
+    }
+    .frame-inner-inner {
+      border: 1px solid #c4993a;
+      padding: 36px 32px;
+      position: relative;
+    }
+    /* Corner ornaments via pseudo-elements */
+    .frame-inner-inner::before,
+    .frame-inner-inner::after {
+      content: '❧';
+      position: absolute;
+      font-size: 1.4rem;
+      color: #c4993a;
+      line-height: 1;
+    }
+    .frame-inner-inner::before { top: 6px; left: 10px; }
+    .frame-inner-inner::after { bottom: 6px; right: 10px; transform: rotate(180deg); }
+
+    /* ---- Typography ---- */
+    h2 {
+      font-family: 'Passion One', sans-serif;
+      font-weight: 900;
+      font-size: 1.8rem;
+      color: #8b1a1a;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 2px;
+    }
+    .stars {
+      text-align: center;
+      color: #1e3a5f;
+      font-size: 1rem;
+      letter-spacing: 0.2em;
+      margin-bottom: 20px;
+    }
+    .section-text {
+      text-align: center;
+      max-width: 540px;
+      margin: 0 auto 20px;
+      font-size: 1rem;
+      line-height: 1.8;
+      color: #3d2a18;
+    }
+
+    /* ---- Hero Frame ---- */
+    .hero-frame .frame-inner {
+      border-width: 4px;
+    }
+    .hero-frame .frame-inner-inner {
+      padding: 48px 36px;
+    }
+    .hero-school {
+      font-family: 'Passion One', sans-serif;
+      font-weight: 400;
+      font-size: 1rem;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: #3d2a18;
+      margin-bottom: 4px;
+    }
+    .hero-title {
+      font-family: 'Abril Fatface', serif;
+      font-size: clamp(3rem, 10vw, 5rem);
+      text-align: center;
+      color: #8b1a1a;
+      line-height: 0.95;
+      margin-bottom: 8px;
+    }
+    .hero-date {
+      text-align: center;
+      font-family: 'Passion One', sans-serif;
+      font-weight: 700;
+      font-size: 1.15rem;
+      color: #1e3a5f;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 6px;
+    }
+    .hero-tagline {
+      text-align: center;
+      font-size: 1rem;
+      color: #3d2a18;
+      margin-bottom: 24px;
+    }
+    .hero-bottom {
+      background: #8b1a1a;
+      margin: 24px -36px -48px;
+      padding: 10px 20px;
+      text-align: center;
+      font-family: 'Passion One', sans-serif;
+      font-weight: 700;
+      font-size: 0.8rem;
+      color: #c4993a;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+    }
+
+    /* ---- Button (ticket style) ---- */
+    .btn {
+      display: inline-block;
+      background: #1e3a5f;
+      color: #faf7f2;
+      font-family: 'Passion One', sans-serif;
+      font-weight: 700;
+      font-size: 1.1rem;
+      padding: 14px 36px;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      border: 2px solid #1e3a5f;
+      position: relative;
+      transition: background 0.2s, transform 0.15s;
+    }
+    .btn::before {
+      content: '';
+      position: absolute;
+      inset: 3px;
+      border: 1px dashed rgba(255,255,255,0.3);
+      pointer-events: none;
+    }
+    .btn:hover {
+      background: #2a4f7a;
+      transform: translateY(-1px);
+    }
+    .btn-red {
+      background: #8b1a1a;
+      border-color: #8b1a1a;
+    }
+    .btn-red:hover { background: #a52020; }
+
+    /* ---- Cards ---- */
+    .card-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    .card {
+      border: 2px solid #c4993a;
+      padding: 22px 18px;
+    }
+    .card h3 {
+      font-family: 'Passion One', sans-serif;
+      font-weight: 900;
+      font-size: 1.1rem;
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 12px;
+      color: #1e3a5f;
+    }
+    .card ul {
+      list-style: none;
+      padding: 0;
+    }
+    .card ul li {
+      padding: 4px 0;
+      text-align: center;
+      font-size: 0.95rem;
+      border-bottom: 1px dotted #ddd5c8;
+    }
+    .card ul li:last-child { border-bottom: none; }
+    .card .footnote {
+      text-align: center;
+      font-size: 0.8rem;
+      font-style: italic;
+      color: #999;
+      margin-top: 8px;
+    }
+
+    /* ---- Wristband prices ---- */
+    .price-list {
+      max-width: 280px;
+      margin: 0 auto 24px;
+    }
+    .price-row {
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+      padding: 4px 0;
+    }
+    .price-amount {
+      font-family: 'Passion One', sans-serif;
+      font-weight: 900;
+      font-size: 1.5rem;
+      color: #8b1a1a;
+      min-width: 50px;
+      text-align: right;
+    }
+    .price-label { color: #3d2a18; font-size: 1.02rem; }
+
+    .detail-text {
+      text-align: center;
+      font-size: 0.9rem;
+      line-height: 1.75;
+      color: #555;
+      margin-bottom: 10px;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .detail-text a { color: #1e3a5f; font-weight: 600; }
+    .assist-text {
+      text-align: center;
+      font-size: 0.82rem;
+      color: #888;
+      font-style: italic;
+      margin-top: 18px;
+    }
+    .assist-text a { color: #8b1a1a; font-weight: 600; font-style: normal; }
+
+    /* ---- Colored banner section ---- */
+    .banner-frame .frame-inner {
+      background: #8b1a1a;
+      border-color: #8b1a1a;
+    }
+    .banner-frame .frame-inner-inner {
+      border-color: #c4993a;
+      color: #faf7f2;
+    }
+    .banner-frame .frame-inner-inner::before,
+    .banner-frame .frame-inner-inner::after { color: #c4993a; }
+    .banner-frame h2 { color: #faf7f2; }
+    .banner-frame .stars { color: #c4993a; }
+    .banner-frame p {
+      text-align: center;
+      max-width: 500px;
+      margin: 0 auto 12px;
+      font-size: 0.95rem;
+      line-height: 1.7;
+      color: rgba(250,247,242,0.85);
+    }
+    .banner-frame a { color: #c4993a; }
+    .btn-gold {
+      background: #c4993a;
+      color: #3b2a1a;
+      border-color: #c4993a;
+    }
+    .btn-gold::before { border-color: rgba(59,42,26,0.3); }
+    .btn-gold:hover { background: #d4a94a; }
+
+    /* ---- Cake ---- */
+    .cake-frame .frame-inner {
+      background: #fff;
+      border-color: #c4993a;
+    }
+    .cake-frame .frame-inner-inner {
+      border-color: #c4993a;
+    }
+
+    /* ---- FAQ ---- */
+    .faq-item { border-bottom: 1px solid #e8e0d4; }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-q {
+      width: 100%;
+      background: none;
+      border: none;
+      text-align: left;
+      padding: 14px 30px 14px 0;
+      font-family: 'Passion One', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      color: #2d2016;
+      cursor: pointer;
+      position: relative;
+    }
+    .faq-q::after {
+      content: '+';
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 1.3rem;
+      color: #8b1a1a;
+    }
+    .faq-q[aria-expanded="true"]::after { content: '\2212'; }
+    .faq-a {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+    }
+    .faq-a-inner {
+      padding: 0 0 14px;
+      font-size: 0.9rem;
+      line-height: 1.7;
+      color: #555;
+    }
+    .faq-a-inner a { color: #1e3a5f; font-weight: 600; }
+
+    /* ---- Footer ---- */
+    .footer-frame {
+      margin-bottom: 32px;
+    }
+    .footer-inner {
+      text-align: center;
+    }
+    .footer-inner .title {
+      font-family: 'Passion One', sans-serif;
+      font-weight: 900;
+      font-size: 1.4rem;
+      color: #8b1a1a;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 4px;
+    }
+    .footer-inner p {
+      font-size: 0.88rem;
+      margin-bottom: 4px;
+      color: #3d2a18;
+    }
+    .footer-inner a { color: #1e3a5f; font-weight: 600; text-decoration: none; }
+    .footer-inner a:hover { text-decoration: underline; }
+    .footer-inner .pta {
+      margin-top: 10px;
+      font-size: 0.8rem;
+      color: #999;
+    }
+    .footer-banner {
+      background: #8b1a1a;
+      margin: 20px -32px -36px;
+      padding: 10px 20px;
+      text-align: center;
+      font-family: 'Passion One', sans-serif;
+      font-weight: 700;
+      font-size: 0.8rem;
+      color: #c4993a;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+    }
+
+    /* ---- Responsive ---- */
+    @media (max-width: 600px) {
+      .card-grid { grid-template-columns: 1fr; }
+      .frame-inner-inner { padding: 28px 20px; }
+      .hero-frame .frame-inner-inner { padding: 36px 20px; }
+      .hero-bottom { margin: 24px -20px -36px; }
+      .footer-banner { margin: 20px -20px -28px; }
+      h2 { font-size: 1.5rem; }
+      .hero-title { font-size: clamp(2.4rem, 12vw, 3.5rem); }
+      .frame { margin: 20px auto; }
+      .btn { padding: 12px 24px; font-size: 1rem; }
+      .faq-q { font-size: 0.95rem; min-height: 44px; }
+      nav ul { gap: 4px 16px; }
+      nav a { font-size: 0.82rem; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { transition-duration: 0.01ms !important; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="#about">Tickets</a></li>
+      <li><a href="#activities">Activities</a></li>
+      <li><a href="#wristbands">Pricing</a></li>
+      <li><a href="#volunteer">Volunteer</a></li>
+      <li><a href="#cake">Cake-a-Palooza</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <div class="frame">
+    <img src="hero-poster.jpg" alt="The Abernethy School Carnival — Friday, May 15, 5:30–8:00 PM — Fun for the Whole Family! Games, Food, Rides" style="width:100%; height:auto; display:block;">
+  </div>
+
+  <!-- CTA — Wristband Info -->
+  <div class="frame" id="about">
+    <a href="https://www.konstella.com/open/sales/69adb9845b1aa98cd7a03ade">
+      <img src="wristband-poster.jpg" alt="Wristband Information — Carnival is a beloved school tradition. A flat fee buys each participant a wristband and allows kids to move freely between games and activities all night long. Get Your Tickets Now! Fun for the Whole Family! Games, Food, Rides, Live Music" style="width:100%; height:auto; display:block;">
+    </a>
+  </div>
+
+  <!-- Activities -->
+  <div class="frame" id="activities">
+    <img src="program-poster.jpg" alt="Abernethy School Carnival Program — What to Expect: A spectacular evening of classic fairground entertainment! Games &amp; Activities: Carnival Games &amp; Prizes, Inflatable Obstacle Courses, Musical Cakes, Face Painting, Balloon Animals, Photo Booth. Food &amp; Treats: Pizza, Hot Dogs, Bento Boxes, Shaved Ice, Cotton Candy, Popcorn, Donuts. Fun for the Whole Family!" style="width:100%; height:auto; display:block;">
+  </div>
+
+  <!-- Wristband Details -->
+  <div class="frame" id="wristbands">
+    <a href="https://www.konstella.com/open/sales/69adb9845b1aa98cd7a03ade">
+      <img src="wristband-details-poster.jpg" alt="Abernethy School Wristband Information — $25 In Advance, $30 At the Event, $10 Pre-Elementary. Each wristband includes unlimited games &amp; activities, plus one cotton candy, one popcorn, and one donut. Purchase online through Konstella or at the school gazebo. Get Your Tickets Now!" style="width:100%; height:auto; display:block;">
+    </a>
+    <p class="assist-text" style="margin-top:12px;">We want every child to enjoy Carnival regardless of ability to pay!<br>Contact counselor <a href="mailto:jmorgan1@pps.net">Jenny Morgan</a> for financial assistance.</p>
+  </div>
+
+  <!-- Volunteer -->
+  <div class="frame" id="volunteer">
+    <a href="https://www.konstella.com/open/sales/69adb9845b1aa98cd7a03ade">
+      <img src="volunteer-poster.jpg" alt="Abernethy School Volunteer — Why We Need You: Carnival is a true community event and relies on parents and community participation. Help set up, run a game, bag cotton candy, or sell wristbands! Sign Up Process: Login to your Konstella account, find the Carnival volunteer signup, select your shift and role. Questions? carnivalhelp@supportabernethy.org. Sign Up on Konstella." style="width:100%; height:auto; display:block;">
+    </a>
+  </div>
+
+  <!-- Cake-a-Palooza -->
+  <div class="frame" id="cake">
+    <img src="cake-poster.jpg" alt="Abernethy School Cake-a-Palooza — Donate a store-bought cake or baked good for the very popular Musical Cake-a-Palooza! Donations will be collected in the auditorium the day of the event. Questions? cake@supportabernethy.org. Donate Today!" style="width:100%; height:auto; display:block;">
+  </div>
+
+  <!-- FAQ -->
+  <div class="frame" id="faq">
+    <div class="frame-inner">
+      <div class="frame-inner-inner">
+        <h2>Questions &amp; Answers</h2>
+        <div class="stars">&#9733; &#9733; &#9733;</div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false" aria-controls="faq-1">Do adults need a wristband?</button>
+          <div class="faq-a" id="faq-1"><div class="faq-a-inner">No. Adults do not need to purchase a wristband. We need you to supervise the games as a volunteer!</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false" aria-controls="faq-2">How do I buy a wristband?</button>
+          <div class="faq-a" id="faq-2"><div class="faq-a-inner">Wristbands can be purchased online through <a href="https://www.konstella.com/open/sales/69adb9845b1aa98cd7a03ade">Konstella</a> or at the school gazebo before &amp; after school May 11&ndash;15, where cash and check are accepted.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false" aria-controls="faq-3">When do I get my wristband?</button>
+          <div class="faq-a" id="faq-3"><div class="faq-a-inner">Wristbands can be picked up at the gazebo before &amp; after school May 11&ndash;15 or during the carnival.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false" aria-controls="faq-4">Does the wristband cover food?</button>
+          <div class="faq-a" id="faq-4"><div class="faq-a-inner">In addition to unlimited games and activities, each wristband includes one cotton candy, one popcorn, and one donut. Wristbands do not cover food purchased from third-party vendors (pizza, shaved ice, etc.) or Fairy Sparkle hair services.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false" aria-controls="faq-5">What if I need financial assistance?</button>
+          <div class="faq-a" id="faq-5"><div class="faq-a-inner">We want every child to enjoy Carnival regardless of ability to pay! Please contact counselor Jenny Morgan at <a href="mailto:jmorgan1@pps.net">jmorgan1@pps.net</a> if you or someone you know needs assistance.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false" aria-controls="faq-6">Where do Carnival proceeds go?</button>
+          <div class="faq-a" id="faq-6"><div class="faq-a-inner">Carnival's primary function is to bring our community together to celebrate. It is not a traditional fundraiser. The carnival committee prices wristbands to cover expenses. Any proceeds go directly to the PTA general fund to enhance school programs.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false" aria-controls="faq-7">How can I volunteer?</button>
+          <div class="faq-a" id="faq-7"><div class="faq-a-inner">Sign up on <a href="https://www.konstella.com/open/sales/69adb9845b1aa98cd7a03ade">Konstella</a> to help set up, run a carnival game, bag cotton candy, or sell wristbands. Questions? Email <a href="mailto:carnivalhelp@supportabernethy.org">carnivalhelp@supportabernethy.org</a>.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false" aria-controls="faq-8">How can I donate to Cake-a-Palooza?</button>
+          <div class="faq-a" id="faq-8"><div class="faq-a-inner">Drop off a store-bought cake or baked good in the auditorium the day of the event. Questions? Email <a href="mailto:cake@supportabernethy.org">cake@supportabernethy.org</a>.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false" aria-controls="faq-9">Where is the carnival?</button>
+          <div class="faq-a" id="faq-9"><div class="faq-a-inner">Abernethy Elementary School &mdash; 2421 SE Orange Ave, Portland, OR 97214. On the school grounds.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false" aria-controls="faq-10">What if it rains?</button>
+          <div class="faq-a" id="faq-10"><div class="faq-a-inner">Rain or shine &mdash; this is Portland! Many activities will have cover.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false" aria-controls="faq-11">Where do I park?</button>
+          <div class="faq-a" id="faq-11"><div class="faq-a-inner">Street parking around the school. Walk, bike, or carpool encouraged.</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div style="text-align:center; padding:24px 20px 32px; font-size:0.85rem; color:#888;">
+    <p>General questions: <a href="mailto:carnival@supportabernethy.org" style="color:#8b1a1a;">carnival@supportabernethy.org</a></p>
+    <p style="margin-top:4px;">&copy; 2026 Abernethy PTA</p>
+  </div>
+
+  <script>
+    document.querySelectorAll('.faq-q').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const expanded = btn.getAttribute('aria-expanded') === 'true';
+        document.querySelectorAll('.faq-q').forEach(b => {
+          b.setAttribute('aria-expanded', 'false');
+          document.getElementById(b.getAttribute('aria-controls')).style.maxHeight = null;
+        });
+        if (!expanded) {
+          btn.setAttribute('aria-expanded', 'true');
+          const panel = document.getElementById(btn.getAttribute('aria-controls'));
+          panel.style.maxHeight = panel.scrollHeight + 'px';
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
