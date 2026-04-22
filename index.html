@@ -408,9 +408,23 @@
     .inflatable-viz {
       background: linear-gradient(180deg, var(--sky) 0%, var(--cream) 100%);
       border-radius: 14px;
-      padding: 10px;
+      padding: 14px;
       margin-bottom: 14px;
       border: 1px solid rgba(29,58,95,0.08);
+      aspect-ratio: 16 / 10;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    .inflatable-viz img {
+      max-width: 100%;
+      max-height: 100%;
+      width: auto;
+      height: auto;
+      object-fit: contain;
+      display: block;
+      filter: drop-shadow(0 4px 6px rgba(29,58,95,0.15));
     }
     .inflatable-viz svg { width: 100%; height: auto; display: block; }
     .inflatable-card h3 {
@@ -1124,6 +1138,41 @@
 
       </g>
 
+      <!-- ===== WORK IN PROGRESS OVERLAY ===== -->
+      <defs>
+        <pattern id="hazard" patternUnits="userSpaceOnUse" width="28" height="28" patternTransform="rotate(45)">
+          <rect width="14" height="28" fill="#1d3a5f"/>
+          <rect x="14" width="14" height="28" fill="#fed034"/>
+        </pattern>
+      </defs>
+      <!-- Dim the map -->
+      <rect x="22" y="22" width="1156" height="896" fill="#fdf4dd" opacity="0.55" rx="6"/>
+
+      <!-- Construction sign, tilted slightly -->
+      <g transform="translate(600,470) rotate(-3)">
+        <!-- Shadow -->
+        <rect x="-244" y="-118" width="488" height="236" rx="14" fill="#1d3a5f" opacity="0.25" transform="translate(7,10)"/>
+        <!-- Hazard-stripe outer border -->
+        <rect x="-244" y="-118" width="488" height="236" rx="14" fill="url(#hazard)"/>
+        <!-- Yellow inner body -->
+        <rect x="-228" y="-102" width="456" height="204" rx="8" fill="#fed034"/>
+        <!-- Top + bottom hazard stripes inside -->
+        <rect x="-228" y="-102" width="456" height="22" fill="url(#hazard)"/>
+        <rect x="-228" y="80" width="456" height="22" fill="url(#hazard)"/>
+
+        <!-- Cone icon on the left -->
+        <g transform="translate(-160,0)">
+          <path d="M -28 44 L 28 44 L 18 -28 L -18 -28 Z" fill="#ec7d72" stroke="#1d3a5f" stroke-width="3"/>
+          <rect x="-18" y="-8" width="36" height="8" fill="#fdf4dd" stroke="#1d3a5f" stroke-width="2"/>
+          <rect x="-22" y="20" width="44" height="8" fill="#fdf4dd" stroke="#1d3a5f" stroke-width="2"/>
+          <ellipse cx="0" cy="44" rx="36" ry="6" fill="#1d3a5f"/>
+        </g>
+
+        <!-- Text -->
+        <text x="40" y="-16" font-family="Fraunces, serif" font-weight="900" font-size="40" text-anchor="middle" fill="#1d3a5f">WORK IN</text>
+        <text x="40" y="28" font-family="Fraunces, serif" font-weight="900" font-size="40" text-anchor="middle" fill="#1d3a5f">PROGRESS</text>
+        <text x="40" y="62" font-family="Nunito, sans-serif" font-weight="800" font-size="13" letter-spacing="2.2" text-anchor="middle" fill="#1d3a5f">2026 MAP COMING SOON</text>
+      </g>
 
     </svg>
 
@@ -1202,102 +1251,38 @@
   </div>
 
   <div class="inflatable-grid">
-    <!-- 100' Radical Run -->
     <div class="inflatable-card" style="--card:#5ea4c4; --card-deep:#3b7a99;">
-      <div class="inflatable-viz">
-        <svg viewBox="0 0 300 130" xmlns="http://www.w3.org/2000/svg">
-          <rect x="10" y="20" width="280" height="90" rx="16" fill="#5ea4c4" stroke="#3b7a99" stroke-width="2"/>
-          <path d="M 20 50 Q 40 30 60 50 T 100 50 T 140 50 T 180 50 T 220 50 T 260 50 T 290 50" fill="none" stroke="#e89a3a" stroke-width="3"/>
-          <path d="M 20 80 Q 40 100 60 80 T 100 80 T 140 80 T 180 80 T 220 80 T 260 80 T 290 80" fill="none" stroke="#f4b8c4" stroke-width="3"/>
-          <rect x="240" y="35" width="44" height="55" rx="6" fill="#e89a3a"/>
-          <circle cx="262" cy="62" r="10" fill="#3b7a99"/>
-        </svg>
-      </div>
+      <div class="inflatable-viz"><img src="inflatables-web/radical-run.jpg" alt="100 foot Radical Run obstacle course" loading="lazy"></div>
       <h3>100′ Radical Run</h3>
       <p>Giant obstacle course with tunnels, pop-ups, walls and a slide at the end. The big one.</p>
     </div>
 
-    <!-- 25' Xtreme Slide -->
     <div class="inflatable-card" style="--card:#ec7d72; --card-deep:#c85a52;">
-      <div class="inflatable-viz">
-        <svg viewBox="0 0 300 130" xmlns="http://www.w3.org/2000/svg">
-          <path d="M 60 120 L 60 30 Q 60 10 90 10 L 240 10 Q 270 10 270 30 L 270 120 Z" fill="#ec7d72" stroke="#c85a52" stroke-width="2"/>
-          <path d="M 80 120 L 80 40 Q 80 22 100 22 L 150 22 L 150 120 Z" fill="#e89a3a"/>
-          <path d="M 170 120 L 170 40 Q 170 22 190 22 L 250 22 L 250 120 Z" fill="#e89a3a" opacity="0.7"/>
-          <rect x="100" y="18" width="110" height="14" fill="#5b8a54"/>
-        </svg>
-      </div>
+      <div class="inflatable-viz"><img src="inflatables-web/xtreme-slide.jpg" alt="25 foot tall Xtreme dual-lane slide" loading="lazy"></div>
       <h3>25′ Xtreme Slide</h3>
       <p>Two-lane tall slide — race a friend to the bottom.</p>
     </div>
 
-    <!-- Green Dragon -->
     <div class="inflatable-card" style="--card:#5b8a54; --card-deep:#3d6b38;">
-      <div class="inflatable-viz">
-        <svg viewBox="0 0 300 130" xmlns="http://www.w3.org/2000/svg">
-          <rect x="70" y="60" width="180" height="60" rx="8" fill="#5b8a54" stroke="#3d6b38" stroke-width="2"/>
-          <ellipse cx="210" cy="55" rx="40" ry="30" fill="#5b8a54" stroke="#3d6b38" stroke-width="2"/>
-          <circle cx="220" cy="48" r="6" fill="#fdf4dd"/>
-          <circle cx="222" cy="48" r="3" fill="#13284a"/>
-          <path d="M 240 58 L 260 56 L 250 70 Z" fill="#e89a3a"/>
-          <path d="M 200 20 L 210 40 L 220 20 Z" fill="#e89a3a"/>
-          <rect x="90" y="110" width="10" height="16" fill="#3d6b38"/>
-          <rect x="220" y="110" width="10" height="16" fill="#3d6b38"/>
-          <rect x="110" y="80" width="30" height="20" rx="3" fill="#e89a3a" opacity="0.6"/>
-          <rect x="160" y="80" width="30" height="20" rx="3" fill="#e89a3a" opacity="0.6"/>
-        </svg>
-      </div>
+      <div class="inflatable-viz"><img src="inflatables-web/green-dragon.jpg" alt="Green Dragon bounce house" loading="lazy"></div>
       <h3>Green Dragon Bounce</h3>
       <p>Classic bounce house with a dragon peeking over the top.</p>
     </div>
 
-    <!-- Pony Belly -->
     <div class="inflatable-card" style="--card:#b08360; --card-deep:#7a5a3f;">
-      <div class="inflatable-viz">
-        <svg viewBox="0 0 300 130" xmlns="http://www.w3.org/2000/svg">
-          <rect x="30" y="50" width="240" height="60" rx="10" fill="#b08360" stroke="#7a5a3f" stroke-width="2"/>
-          <path d="M 50 50 L 50 20 M 90 50 L 90 20 M 210 50 L 210 20 M 250 50 L 250 20"
-                stroke="#7a5a3f" stroke-width="10" stroke-linecap="round"/>
-          <rect x="48" y="12" width="10" height="14" rx="2" fill="#2a2a3a"/>
-          <rect x="88" y="12" width="10" height="14" rx="2" fill="#2a2a3a"/>
-          <rect x="208" y="12" width="10" height="14" rx="2" fill="#2a2a3a"/>
-          <rect x="248" y="12" width="10" height="14" rx="2" fill="#2a2a3a"/>
-          <path d="M 220 18 L 228 4 L 236 18 Z" fill="#e8dcc5"/>
-          <path d="M 58 18 L 66 4 L 74 18 Z" fill="#e8dcc5"/>
-        </svg>
-      </div>
+      <div class="inflatable-viz"><img src="inflatables-web/pony-belly.jpg" alt="Pony Belly bronco bounce" loading="lazy"></div>
       <h3>Pony Belly Bounce</h3>
       <p>Bounce underneath a big inflatable bronco — unusual and fun.</p>
     </div>
 
-    <!-- Leaps & Bounds -->
     <div class="inflatable-card" style="--card:#5ea4c4; --card-deep:#3b7a99;">
-      <div class="inflatable-viz">
-        <svg viewBox="0 0 300 130" xmlns="http://www.w3.org/2000/svg">
-          <rect x="20" y="40" width="260" height="70" rx="12" fill="#5ea4c4" stroke="#3b7a99" stroke-width="2"/>
-          <rect x="30" y="30" width="240" height="14" rx="4" fill="#ec7d72"/>
-          <circle cx="60" cy="75" r="22" fill="#ec7d72" stroke="#c85a52" stroke-width="2"/>
-          <circle cx="115" cy="75" r="22" fill="#ec7d72" stroke="#c85a52" stroke-width="2"/>
-          <circle cx="170" cy="75" r="22" fill="#ec7d72" stroke="#c85a52" stroke-width="2"/>
-          <circle cx="225" cy="75" r="22" fill="#ec7d72" stroke="#c85a52" stroke-width="2"/>
-        </svg>
-      </div>
+      <div class="inflatable-viz"><img src="inflatables-web/leaps-bounds.jpg" alt="Leaps and Bounds ball hopping inflatable" loading="lazy"></div>
       <h3>Leaps &amp; Bounds</h3>
       <p>Hop across four huge red balls, Wipeout-style. Much harder than it looks.</p>
     </div>
 
-    <!-- Axe Throwing -->
     <div class="inflatable-card" style="--card:#8a6a4a; --card-deep:#5e4630;">
-      <div class="inflatable-viz">
-        <svg viewBox="0 0 300 130" xmlns="http://www.w3.org/2000/svg">
-          <rect x="40" y="20" width="220" height="90" rx="10" fill="#8a6a4a" stroke="#5e4630" stroke-width="2"/>
-          <rect x="50" y="28" width="200" height="18" rx="3" fill="#5e4630"/>
-          <circle cx="150" cy="72" r="30" fill="#e5d9c4" stroke="#5e4630" stroke-width="2"/>
-          <circle cx="150" cy="72" r="22" fill="#b08360"/>
-          <circle cx="150" cy="72" r="14" fill="#c85a52"/>
-          <circle cx="150" cy="72" r="6" fill="#fdf4dd"/>
-        </svg>
-      </div>
+      <div class="inflatable-viz"><img src="inflatables-web/axe-throwing.jpg" alt="Compact inflatable axe throwing game" loading="lazy"></div>
       <h3>Axe Throwing</h3>
       <p>Velcro-axes, inflatable target, safe for all ages. Surprisingly popular.</p>
     </div>
