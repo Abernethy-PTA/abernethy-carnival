@@ -262,6 +262,28 @@
       display: block;
       border-radius: 16px;
     }
+    .map-stage {
+      position: relative;
+      display: block;
+      border-radius: 16px;
+      overflow: hidden;
+      line-height: 0;
+    }
+    .map-hot {
+      position: absolute;
+      display: block;
+      border-radius: 10px;
+      background: transparent;
+      transition: background 0.15s, box-shadow 0.15s, transform 0.15s;
+      -webkit-tap-highlight-color: rgba(29, 58, 95, 0.25);
+    }
+    .map-hot:hover,
+    .map-hot:focus-visible {
+      background: rgba(255, 255, 255, 0.22);
+      box-shadow: 0 0 0 3px rgba(29, 58, 95, 0.7);
+      outline: none;
+    }
+    .map-hot:active { transform: scale(0.98); }
     .map-legend {
       display: flex;
       flex-wrap: wrap;
@@ -787,7 +809,15 @@
   </div>
 
   <div class="map-wrap">
-    <img class="map-img" src="carnival-map.jpg" alt="Map of the Abernethy carnival grounds — inflatables, games, food, and operations laid out across the school yard">
+    <div class="map-stage">
+      <img class="map-img" src="carnival-map.jpg" alt="Map of the Abernethy carnival grounds — inflatables, games, food, and operations laid out across the school yard">
+      <a class="map-hot" href="#cake"        style="left:46%; top:7%;  width:20%; height:14%;" aria-label="Cake-a-Palooza"></a>
+      <a class="map-hot" href="#wristbands"  style="left:5%;  top:36%; width:16%; height:13%;" aria-label="Ticket sales"></a>
+      <a class="map-hot" href="#volunteer"   style="left:21%; top:48%; width:13%; height:11%;" aria-label="Volunteer check-in and medic"></a>
+      <a class="map-hot" href="#food"        style="left:67%; top:45%; width:16%; height:14%;" aria-label="ASH Woodfired Pizza"></a>
+      <a class="map-hot" href="#food"        style="left:83%; top:45%; width:16%; height:14%;" aria-label="Stoopid Burger"></a>
+      <a class="map-hot" href="#food"        style="left:83%; top:64%; width:14%; height:13%;" aria-label="Shaved Ice"></a>
+    </div>
   </div>
 </section>
 
