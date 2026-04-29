@@ -272,18 +272,19 @@
     .map-hot {
       position: absolute;
       display: block;
-      border-radius: 10px;
+      border-radius: 8px;
       background: transparent;
-      transition: background 0.15s, box-shadow 0.15s, transform 0.15s;
-      -webkit-tap-highlight-color: rgba(29, 58, 95, 0.25);
+      transition: background 0.15s, transform 0.1s;
+      -webkit-tap-highlight-color: rgba(29, 58, 95, 0.12);
     }
-    .map-hot:hover,
+    @media (hover: hover) {
+      .map-hot:hover { background: rgba(29, 58, 95, 0.08); }
+    }
     .map-hot:focus-visible {
-      background: rgba(255, 255, 255, 0.22);
-      box-shadow: 0 0 0 3px rgba(29, 58, 95, 0.7);
-      outline: none;
+      outline: 2px solid rgba(29, 58, 95, 0.45);
+      outline-offset: 1px;
     }
-    .map-hot:active { transform: scale(0.98); }
+    .map-hot:active { transform: scale(0.97); }
     .map-legend {
       display: flex;
       flex-wrap: wrap;
