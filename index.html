@@ -269,6 +269,35 @@
       overflow: hidden;
       line-height: 0;
     }
+
+    /* ---- Indoor games map ---- */
+    .indoor-wrap {
+      background: var(--cream);
+      border-radius: 28px;
+      padding: 22px 18px 24px;
+      box-shadow: 0 12px 40px rgba(29, 58, 95, 0.12), 0 0 0 1px rgba(29, 58, 95, 0.06);
+    }
+    .indoor-svg {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .indoor-room-label {
+      font-family: 'Fraunces', serif;
+      font-weight: 900;
+      font-size: 30px;
+      fill: var(--navy);
+      text-anchor: middle;
+      letter-spacing: 0.16em;
+    }
+    .indoor-tile-text {
+      font-family: 'Nunito', sans-serif;
+      font-weight: 800;
+      font-size: 18px;
+      fill: var(--navy);
+      text-anchor: middle;
+      letter-spacing: 0.04em;
+    }
     .map-hot {
       position: absolute;
       display: block;
@@ -845,8 +874,8 @@
       <a class="map-hot" href="#activities"  style="left:36%; top:30%; width:11%; height:8%;"  aria-label="Tattoos"></a>
 
       <!-- Games — indoor (cafeteria + gym) and the outdoor cluster -->
-      <a class="map-hot" href="#activities"  style="left:55%; top:33%; width:12%; height:9%;"  aria-label="Games — cafeteria"></a>
-      <a class="map-hot" href="#activities"  style="left:69%; top:33%; width:12%; height:9%;"  aria-label="Games — gym"></a>
+      <a class="map-hot" href="#indoor-games" style="left:55%; top:33%; width:12%; height:9%;" aria-label="Games — cafeteria"></a>
+      <a class="map-hot" href="#indoor-games" style="left:69%; top:33%; width:12%; height:9%;" aria-label="Games — gym"></a>
       <a class="map-hot" href="#activities"  style="left:54%; top:42%; width:9%;  height:8%;"  aria-label="Pick a duck"></a>
       <a class="map-hot" href="#activities"  style="left:62%; top:42%; width:9%;  height:8%;"  aria-label="Bottle toss"></a>
       <a class="map-hot" href="#activities"  style="left:42%; top:50%; width:11%; height:11%;" aria-label="Balloon twister and face painter"></a>
@@ -994,6 +1023,65 @@
         <li><span class="dot dot-orange"></span>Musical cakes</li>
       </ul>
     </div>
+  </div>
+</section>
+
+<!-- ================ INDOOR GAMES ================ -->
+<section class="chapter" id="indoor-games">
+  <div class="chapter-head">
+    <div class="chapter-eyebrow">cafeteria + gym</div>
+    <h2 class="chapter-title">Indoor games</h2>
+    <div class="chapter-sub">Step inside for the rainy-day classics. Both rooms run all night.</div>
+  </div>
+
+  <div class="indoor-wrap">
+    <svg class="indoor-svg" viewBox="0 0 1000 540" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Map of indoor games in the cafeteria and gym">
+      <defs>
+        <filter id="indoor-shadow" x="-10%" y="-10%" width="120%" height="130%">
+          <feDropShadow dx="0" dy="3" stdDeviation="2" flood-color="#1d3a5f" flood-opacity="0.18"/>
+        </filter>
+      </defs>
+
+      <!-- Room labels (above) -->
+      <text x="240" y="34" class="indoor-room-label">CAFETERIA</text>
+      <text x="760" y="34" class="indoor-room-label">GYM</text>
+
+      <!-- Cafeteria room -->
+      <rect x="40" y="55" width="400" height="440" rx="14" fill="#fffdf6" stroke="#1d3a5f" stroke-width="3"/>
+      <!-- Gym room -->
+      <rect x="560" y="55" width="400" height="440" rx="14" fill="#fffdf6" stroke="#1d3a5f" stroke-width="3"/>
+
+      <!-- Cafeteria tiles -->
+      <g filter="url(#indoor-shadow)">
+        <rect x="70" y="120" width="150" height="60" rx="8" fill="#ec7d72"/>
+        <rect x="70" y="260" width="150" height="60" rx="8" fill="#f4c842"/>
+        <rect x="280" y="170" width="140" height="60" rx="8" fill="#f4c842"/>
+        <rect x="280" y="320" width="140" height="90" rx="8" fill="#f4c842"/>
+      </g>
+      <text x="145" y="156" class="indoor-tile-text">Fairy Hair</text>
+      <text x="145" y="296" class="indoor-tile-text">Photobooth</text>
+      <text x="350" y="206" class="indoor-tile-text">Spin Art</text>
+      <text x="350" y="372" class="indoor-tile-text">Fish Pong</text>
+
+      <!-- Gym tiles -->
+      <g filter="url(#indoor-shadow)">
+        <rect x="590" y="110" width="160" height="55" rx="8" fill="#f4c842"/>
+        <rect x="590" y="180" width="160" height="55" rx="8" fill="#f4c842"/>
+        <rect x="590" y="265" width="160" height="55" rx="8" fill="#f4c842"/>
+        <rect x="590" y="350" width="160" height="55" rx="8" fill="#f4c842"/>
+        <rect x="780" y="110" width="160" height="55" rx="8" fill="#f4c842"/>
+        <rect x="780" y="200" width="160" height="90" rx="8" fill="#f4c842"/>
+        <rect x="780" y="350" width="160" height="55" rx="8" fill="#f4c842"/>
+      </g>
+      <text x="670" y="143" class="indoor-tile-text">Nosepicker</text>
+      <text x="670" y="213" class="indoor-tile-text">Bean Bag Toss</text>
+      <text x="670" y="298" class="indoor-tile-text">Fishing 2</text>
+      <text x="670" y="383" class="indoor-tile-text">Fishing 1</text>
+      <text x="860" y="143" class="indoor-tile-text">Plinko</text>
+      <text x="860" y="240" class="indoor-tile-text">Wheel of</text>
+      <text x="860" y="262" class="indoor-tile-text">Fortune</text>
+      <text x="860" y="383" class="indoor-tile-text">Fortune Teller</text>
+    </svg>
   </div>
 </section>
 
