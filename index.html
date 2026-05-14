@@ -660,6 +660,35 @@
     .volunteer-copy a { color: var(--coral-deep); font-weight: 700; }
     .volunteer-cta { text-align: center; }
 
+    /* ---- T-Shirts ---- */
+    .tshirt-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      align-items: center;
+      background: var(--cream);
+      border-radius: 20px;
+      padding: 28px 30px;
+      box-shadow: 0 6px 0 rgba(29,58,95,0.08);
+      max-width: 860px;
+      margin: 0 auto;
+    }
+    .tshirt-image {
+      background: #fff;
+      border-radius: 14px;
+      padding: 12px;
+      border: 1px solid rgba(29,58,95,0.08);
+    }
+    .tshirt-image img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 8px;
+    }
+    .tshirt-copy p { margin-bottom: 10px; font-size: 1rem; }
+    .tshirt-copy p:last-of-type { margin-bottom: 16px; }
+    .tshirt-cta { text-align: left; }
+
     /* ---- Cake ---- */
     .cake-card {
       background: var(--coral);
@@ -781,6 +810,8 @@
       .map-wrap { padding: 10px; border-radius: 20px; }
       .price-grid { grid-template-columns: repeat(2, 1fr); }
       .volunteer-grid { grid-template-columns: 1fr; text-align: center; }
+      .tshirt-grid { grid-template-columns: 1fr; text-align: center; }
+      .tshirt-cta { text-align: center; }
       .activity-col { padding: 18px 20px; }
       .faq-wrap { padding: 4px 18px; }
     }
@@ -792,6 +823,7 @@
   <ul>
     <li><a href="#wristbands">Wristbands</a></li>
     <li><a href="#map">Map</a></li>
+    <li><a href="#tshirts">T-Shirts</a></li>
     <li><a href="#inflatables">Inflatables</a></li>
     <li><a href="#activities">Games</a></li>
     <li><a href="#food">Food</a></li>
@@ -936,6 +968,29 @@
     <div class="info-card soft">
       <div class="info-eyebrow">Financial assistance</div>
       <p>We want every child to enjoy Carnival regardless of ability to pay. Contact school counselor Jenny Morgan at <a href="mailto:jmorgan1@pps.net">jmorgan1@pps.net</a>.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================ T-SHIRTS ================ -->
+<section class="chapter" id="tshirts">
+  <div class="chapter-head">
+    <div class="chapter-eyebrow">show your school spirit</div>
+    <h2 class="chapter-title">Carnival T-Shirts</h2>
+    <div class="chapter-sub">Official Abernethy Elementary Carnival 2026 t-shirts. Wear it to the carnival, wear it all year.</div>
+  </div>
+
+  <div class="tshirt-grid">
+    <div class="tshirt-image">
+      <a href="https://bashors.chipply.com/abernethycarnival/" target="_blank" rel="noopener">
+        <img src="tshirt.jpg" alt="Yellow Abernethy Elementary School Carnival 2026 t-shirt with navy tree logo">
+      </a>
+    </div>
+    <div class="tshirt-copy">
+      <p>Available in multiple colors and sizes for kids and adults. Orders are placed online and shipped or delivered through Bashors.</p>
+      <div class="tshirt-cta">
+        <a class="btn btn-primary big" href="https://bashors.chipply.com/abernethycarnival/" target="_blank" rel="noopener">Order T-Shirts →</a>
+      </div>
     </div>
   </div>
 </section>
