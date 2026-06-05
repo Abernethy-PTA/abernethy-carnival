@@ -17,9 +17,9 @@ This directory IS the deployed source. Push to `main` → GitHub Pages auto-depl
 - Buttons: `.btn .btn-primary` (navy), `.btn .btn-secondary` (cream/coral border), add `.big` for hero CTAs
 - Sections use shared `.chapter` wrapper with `.chapter-head` containing `.chapter-eyebrow`, `.chapter-title`, `.chapter-sub`
 
-## Sibling directory note
-- `/Users/astoertz/abernethy-carnival/` is a STALE working dir from the old vintage-poster design. Its `index.html` is NOT deployed.
-- That dir does still hold source assets (PNGs, generated maps, t-shirt photos). Compress new assets there, then copy compressed JPGs into this repo.
+## Single directory (consolidated 2026-06-05)
+- This is the ONE and only working directory. The old stale `abernethy-carnival-live/` split was consolidated away — there is no sibling dir anymore.
+- New raw assets (PNGs, generated maps, photos): drop them in, compress to JPG, and commit. No separate scratch dir.
 
 ## Content
 - Event: Friday May 15 2026, 5:30–8:30 PM
@@ -30,7 +30,7 @@ This directory IS the deployed source. Push to `main` → GitHub Pages auto-depl
 - Wristband includes: unlimited games + 1 cotton candy + 1 popcorn + 1 donut
 - Does NOT cover: food trucks, Fairy Sparkle hair
 - Financial assistance: Jenny Morgan, jmorgan1@pps.net
-- Volunteer signup: Konstella, questions → carnivalhelp@supportabernethy.org
+- Volunteer signup: Konstella, questions → carnival@supportabernethy.org (carnivalhelp@ is retired — never used, no members)
 - Cake-a-Palooza: store-bought donations only (PPS allergen rules), drop in auditorium day-of, cake@supportabernethy.org
 - General questions: carnival@supportabernethy.org
 

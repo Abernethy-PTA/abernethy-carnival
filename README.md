@@ -20,7 +20,6 @@ Hosted on GitHub Pages from the `main` branch of `Abernethy-PTA/abernethy-carniv
 `carnival` CNAME → `abernethy-pta.github.io` in Squarespace Domains for `supportabernethy.org`.
 
 ## Contacts
-- General: carnival@supportabernethy.org
-- Volunteers: carnivalhelp@supportabernethy.org
+- General / Volunteers: carnival@supportabernethy.org
 - Cake-a-Palooza: cake@supportabernethy.org
 - Financial assistance: Jenny Morgan, jmorgan1@pps.net

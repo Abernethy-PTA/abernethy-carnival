@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Abernethy Elementary Carnival — Friday, May 15, 2026</title>
-  <meta name="description" content="Inflatables, games, food, prizes, Cake-a-Palooza — Abernethy Elementary School Carnival on Friday, May 15, 2026 from 5:30–8:30 PM.">
+  <title>Abernethy Elementary Carnival — Save the Date: Friday, May 14, 2027</title>
+  <meta name="description" content="The Abernethy Elementary School Carnival returns Friday, May 14, 2027. We're looking for parent volunteers to help lead it. See the 2026 recap below.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=Nunito:wght@400;600;800&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
@@ -804,6 +804,50 @@
       opacity: 0.5;
     }
 
+    /* ---- 2026 archive divider ---- */
+    .year-divider {
+      max-width: 1100px;
+      margin: 64px auto 8px;
+      padding: 0 20px;
+      text-align: center;
+    }
+    .year-divider .yd-rule {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      justify-content: center;
+      color: var(--navy);
+    }
+    .year-divider .yd-rule::before,
+    .year-divider .yd-rule::after {
+      content: '';
+      height: 2px;
+      flex: 1;
+      max-width: 160px;
+      background: rgba(29,58,95,0.18);
+    }
+    .year-divider .yd-eyebrow {
+      font-family: 'Caveat', cursive;
+      font-size: 1.4rem;
+      color: var(--coral);
+    }
+    .year-divider .yd-title {
+      font-family: 'Fraunces', serif;
+      font-weight: 900;
+      font-variation-settings: "opsz" 144;
+      color: var(--navy);
+      font-size: clamp(2rem, 5vw, 3.4rem);
+      line-height: 1;
+      white-space: nowrap;
+    }
+    .year-divider .yd-sub {
+      font-family: 'Nunito', sans-serif;
+      color: var(--navy);
+      opacity: 0.75;
+      margin-top: 8px;
+      font-size: 1.02rem;
+    }
+
     @media (max-width: 700px) {
       .hero { padding-top: 48px; }
       .ribbon { padding: 12px 32px; }
@@ -821,6 +865,8 @@
 
 <nav>
   <ul>
+    <li><a href="#y2027">2027</a></li>
+    <li><a href="#recap-2026">2026 Recap</a></li>
     <li><a href="#wristbands">Wristbands</a></li>
     <li><a href="#map">Map</a></li>
     <li><a href="#tshirts">T-Shirts</a></li>
@@ -832,6 +878,44 @@
     <li><a href="#faq">FAQ</a></li>
   </ul>
 </nav>
+
+<!-- ================ 2027 SAVE THE DATE ================ -->
+<section class="hero" id="y2027">
+  <div class="sparkles" aria-hidden="true">
+    <span style="top:10%; left:7%; color:var(--coral); font-size:1.4rem;">✳</span>
+    <span style="top:16%; right:10%; color:var(--teal); font-size:1.1rem;">✳</span>
+    <span style="top:46%; left:4%; color:var(--orange); font-size:1rem;">✳</span>
+    <span style="top:54%; right:5%; color:var(--coral); font-size:1.3rem;">✳</span>
+    <span style="top:80%; left:12%; color:var(--teal); font-size:1rem;">✳</span>
+    <span style="top:86%; right:13%; color:var(--orange); font-size:1.05rem;">✳</span>
+  </div>
+
+  <div class="hero-eyebrow">save the date</div>
+  <h1 class="hero-title">2027</h1>
+  <div class="ribbon">Friday · May 14, 2027<span class="line2">Abernethy Elementary Carnival</span></div>
+
+  <div class="hero-tagline">
+    <span class="l1">Carnival is coming back!</span>
+    <span class="l2">And we need parents to lead it.</span>
+  </div>
+
+  <p class="hero-pregame" style="max-width:620px; margin-left:auto; margin-right:auto;">
+    Thank you for an incredible 2026 — it was a huge success. We expect Carnival to take place
+    on <strong>Friday, May 14, 2027</strong>, and we're looking for parent volunteers to help lead it.
+  </p>
+
+  <div class="hero-cta-row">
+    <a class="btn btn-primary" href="mailto:carnival@supportabernethy.org?subject=Volunteer%20to%20help%20lead%20Carnival%202027">Help Lead Carnival 2027</a>
+    <a class="btn btn-secondary" href="#recap-2026">See the 2026 Carnival</a>
+  </div>
+</section>
+
+<!-- ================ 2026 RECAP DIVIDER ================ -->
+<div class="year-divider" id="recap-2026">
+  <div class="yd-rule"><span class="yd-title">The 2026 Carnival</span></div>
+  <div class="yd-eyebrow">a look back</div>
+  <div class="yd-sub">Everything below is from our May 15, 2026 event — kept here for reference as we plan 2027. We'll reuse it all next year.</div>
+</div>
 
 <section class="hero">
   <div class="sparkles" aria-hidden="true">
@@ -1193,7 +1277,7 @@
   <div class="volunteer-grid">
     <div class="volunteer-copy">
       <p>Shifts include helping with setup, running a carnival game, bagging cotton candy, selling wristbands at the gazebo, or breaking things down at the end. Adults don't need a wristband — you're supervising the fun.</p>
-      <p>Questions? <a href="mailto:carnivalhelp@supportabernethy.org">carnivalhelp@supportabernethy.org</a></p>
+      <p>Questions? <a href="mailto:carnival@supportabernethy.org">carnival@supportabernethy.org</a></p>
     </div>
     <div class="volunteer-cta">
       <a class="btn btn-secondary big" href="https://www.konstella.com/open/sales/69adb9845b1aa98cd7a03ade" target="_blank" rel="noopener">Sign up on Konstella →</a>
@@ -1287,7 +1371,7 @@
   <p>Friday, May 15, 2026 · 5:30 – 8:30 PM</p>
   <p>Abernethy Elementary School · 2421 SE Orange Ave, Portland, OR 97214</p>
   <p class="foot-contact"><a href="mailto:carnival@supportabernethy.org">carnival@supportabernethy.org</a></p>
-  <p class="foot-small">We are excited to celebrate our community with your families May 15<sup>th</sup>.</p>
+  <p class="foot-small">See you next year — Carnival returns Friday, May 14, 2027. Want to help lead it? <a href="mailto:carnival@supportabernethy.org?subject=Volunteer%20to%20help%20lead%20Carnival%202027">Email us</a>.</p>
   <p class="foot-credit">© 2026 Abernethy PTA</p>
 </footer>
 
